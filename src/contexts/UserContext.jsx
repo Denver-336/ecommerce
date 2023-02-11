@@ -1,9 +1,9 @@
 import axios from 'axios'
-import { createContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { header, token } from '../utils/autenticacion'
 import { API_URL } from '../utils/env'
 
-const UserContext = createContext()
+const UserContext = React.createContext()
 
 const UserProvider = ({ children }) => {
   const [userData, setUserData] = useState()
