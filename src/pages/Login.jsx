@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { UserContext } from '../contexts/userContext'
+import { UserContext } from '../contexts/UserContext'
 import { setToken } from '../utils/autenticacion'
 import { API_URL } from '../utils/env'
 
