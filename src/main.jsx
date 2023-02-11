@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import { CartProvider } from './contexts/CartContext'
-import { UserProvider } from './contexts/userContext'
+import { UserProvider } from './contexts/UserContext'
 import Routes from './routes/Routes'
 import './styles/globals.css'
 
