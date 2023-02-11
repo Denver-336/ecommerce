@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { CartContext } from '../../contexts/CartContext'
-import { header } from '../../utils/autenticacion'
+import { token } from '../../utils/autenticacion'
 import { API_URL } from '../../utils/env'
 import Pagar from '../paypal/Pagar'
 
@@ -24,6 +24,7 @@ export default function CrearOrden () {
     })
     const body = { products: carrito }
     const endpoint = '/private/purchase-orders'
+    const header = { headers: { Authorization: `Bearer ${token}` } }
 
     axios
       .post(`${API_URL}${endpoint}`, body, header)
