@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { UserContext } from '../contexts/userContext'
+import { UserContext } from '../contexts/UserContext'
 import { deleteToken } from '../utils/autenticacion'
 
 export default function Perfil () {
